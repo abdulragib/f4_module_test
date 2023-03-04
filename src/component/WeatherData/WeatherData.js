@@ -6,7 +6,7 @@ const WeatherData = () => {
   let { cityName } = useParams();
   const [data, setData] = useState();
   const [celcius, setCelcius] = useState(false);
-  const [fahrenheit, setFahrenheit] = useState(false);
+  const [fahrenheit, setFahrenheit] = useState(true);
 
   let apiKey = "cdb4c2a64ed44f7eb81140834230403";
   let BaseUrl = "https://api.weatherapi.com/v1/current.json?key=";
