@@ -1,13 +1,24 @@
-*{
+
+.Container{
+    width:100vw;
+    height:100vh;
     background-color: black;
-    color: white;
+    color:white;
 }
 
-h1{
+.landing-title{
     font-size: 60px;
 }
 
-input{
+.App{
+    padding-left:30px;
+    background-color: black;
+    color:white;
+    padding-top:30px;
+    margin-top:-4%;
+}
+
+.input{
     width: 90%;
     height: 30px;
     font-size: 20px;
@@ -16,7 +27,7 @@ input{
     padding: 10px;
 }
 
-button{
+.landing-btn{
     width: 15%;
     height: 40px;
     font-size: 20px;
@@ -24,8 +35,8 @@ button{
     border: 1px solid white;
     padding: 10px;
     background-color: white;
-    color: black;
+    color: black !important;;
     margin-top:20px;
     position:relative;
-    left:-38%;
+   
 }
