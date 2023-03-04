@@ -9,7 +9,7 @@ function App() {
     <BrowserRouter>
         <Routes>
             <Route index path="/f4_module_test" element={<LandingPage/>} />
-            <Route path='/weather/:cityName' element={<WeatherData/>}/>
+            <Route path={`/weather/:cityName`} element={<WeatherData/>}/>
         </Routes>
     </BrowserRouter>
   );

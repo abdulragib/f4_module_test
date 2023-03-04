@@ -12,7 +12,6 @@ const LandingPage = () => {
   };
 
   
-
   return (
     <div className="App">
         <div className="Container">
