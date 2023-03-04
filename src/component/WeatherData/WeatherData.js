@@ -15,6 +15,7 @@ const WeatherData = () => {
   useEffect(() => {
     fetch(url).then(response => response.json())
       .then((apiData) => {
+        console.log(apiData)
         setData(apiData)
       })
   }, [url])
@@ -49,6 +50,7 @@ const WeatherData = () => {
             <div>Location: {data.location.name}</div>
             <div>Temperature: {data.current.temp_c}°C</div>
             <div>Condition: {data.current.condition.text}</div>
+            <div>Region: {data.location.tz_id}mph</div>
           </>
         )}
         {fahrenheit && data && (
@@ -57,6 +59,7 @@ const WeatherData = () => {
             <div>Location: {data.location.name}</div>
             <div>Temperature: {data.current.temp_f}°F</div>
             <div>Condition: {data.current.condition.text}</div>
+            <div>Region: {data.location.tz_id}mph</div>
           </>
         )}
       </div>
